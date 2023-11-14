@@ -35,8 +35,6 @@ public class Main {
         stack.push(firstTerminator.name);
         int n=1;
         while (stack.peek()!='$'){
-            System.out.println(stack);
-            System.out.println(buffer);
             char c=stack.peek();
             if(!isInTerminators(c)){
                 if(c==buffer.peek()){
